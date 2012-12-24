@@ -11,7 +11,7 @@ SQL file to be used in conjunction with Hive and Amazon MapReduce to produce wor
 Ruby script that does essentially the same thing as "augur.sql" - produce a year-by-year output file with every term that is above the minimum threshold usage as well as its normalized count and year-over-year growth.  You'll also need to download the 2009 Google 1-gram dataset (English).  On my laptop, it takes about 110 minutes to populate the redis database then about 30 minutes to extract the key terms out of it.
 
 Example usage:
-redis-server
+redis-server \\
 ruby augur\_all.rb
 
 ## augur\_find.rb
